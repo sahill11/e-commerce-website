@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Online Shoping Mart</title>
+     <link rel="stylesheet" href="ecommerce.css">
+     <link rel="stylesheet" href="responsive.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
+          rel="stylesheet">
+     <script src="https://kit.fontawesome.com/b7e8348489.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+     <div class="container">
+          <div class="navbar">
+               <div class="logo">
+                    <h3>SHOPING MART</h3>
+               </div>
+               <nav class="right-nav">
+                    <ul id="menuitems">
+                         <li><a href="ecommerce.html">Home</a></li>
+                         <li><a href="productlist.html">Products</a></li>
+                         <li><a href="">Contact</a></li>
+                         <li><a href="">About</a></li>
+                    </ul>
+               </nav>
+               <img src="imgs/img-2.png" width="32px" height="32px">
+               <img src="imgs/menu-icon.png" class="menu-icon" width="25px" height="25px" onclick="menutoggle()">
+          </div>
+     </div>
+     <div class="small-container single-product">
+              <div class="row">
+                       <div class="col-2">
+                                <img src="imgs/2 (1).jpg" id="bigimg">
+                                <div class="small-img-row">
+                                         <div class="small-img-col">
+                                                  <img src="imgs/2 (1).jpg" class="smallimgs">
+                                         </div>
+                                         <div class="small-img-col">
+                                                  <img src="imgs/2 (2).jpg" class="smallimgs">
+                                         </div>
+                                         <div class="small-img-col">
+                                                  <img src="imgs/2 (3).jpg" class="smallimgs">
+                                         </div>
+                                         <div class="small-img-col">
+                                                  <img src="imgs/2 (4).jpg" class="smallimgs">
+                                         </div>
+                                </div>
+                       </div>
+                       <div class="col-2">
+                                <p>Home / Led-tv</p>
+                                <h1>Vu LED Tv</h1>
+                                <h4>$500.00</h4>
+                                <select>
+                                         <option>Select Size</option>
+                                         <option>XL</option>
+                                         <option>XXL</option>
+                                         <option>Large</option>
+                                         <option>Extra Large</option>
+                                </select>
+                                <input type="number" value="1">
+                                <a href="" class="btn">Add to cart</a>
+                                <h3>Product Details</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae molestias dolorum excepturi fugiat quis minima amet quaerat assumenda perspiciatis consectetur, earum sunt error nulla laudantium? Aliquid sed necessitatibus provident, fugiat quos odio laboriosam quae.</p>
+                       </div>
+              </div>
+     </div>
+     <div class="small-container">
+          <div class="row row-2">
+               <h2>Related Products</h2>
+               <p>View More</p>
+          </div>
+     </div>
+
+     <div class="small-container">
+          <div class="row">
+               <div class="col-4">
+                    <img src="imgs/2 (1).jpg" alt="">
+                    <h4>Vu Led Tv</h4>
+                    <div class="ratting">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                    </div>
+                    <p>$44.00</p>
+               </div>
+               <div class="col-4">
+                    <img src="imgs/2 (2).jpg" alt="">
+                    <h4>Kodak Led Tv</h4>
+                    <div class="ratting">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half"></i>
+                    </div>
+                    <p>$54.00</p>
+               </div>
+               <div class="col-4">
+                    <img src="imgs/2 (3).jpg" alt="">
+                    <h4>TCL Led Tv</h4>
+                    <div class="ratting">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half"></i>
+                    </div>
+                    <p>$64.00</p>
+               </div>
+               <div class="col-4">
+                    <img src="imgs/2 (4).jpg" alt="">
+                    <h4>TOSHIBA Led Tv</h4>
+                    <div class="ratting">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                    </div>
+                    <p>$74.00</p>
+               </div>
+          </div>
+          <div class="page-btn">
+               <span>1</span>
+               <span>2</span>
+               <span>3</span>
+               <span>4</span>
+               <span>&#8594;</span>
+          </div>
+     </div>
+
+     <!-- ------- Footer ------- -->
+
+     <div class="footer">
+          <div class="container">
+               <div class="row">
+                    <div class="footer-col-1">
+                         <h3>Download Our App</h3>
+                         <p>Download Our App on Android & Ios Device!</p>
+                    </div>
+                    <div class="footer-col-2">
+                         <div class="logo">
+                              <h3>SHOPING MART &#xf07a;</h3>
+                         </div>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, esse!</p>
+                    </div>
+                    <div class="footer-col-3">
+                         <h3>Follow Us</h3>
+                         <ul>
+                              <li>Facebook</li>
+                              <li>Instagram</li>
+                              <li>Twitter</li>
+                              <li>Pintrest</li>
+                         </ul>
+                    </div>
+                    <div class="footer-col-4">
+                         <h3>Useful Links</h3>
+                         <ul>
+                              <li>Cupons</li>
+                              <li>Blog Posts</li>
+                              <li>Return Policy</li>
+                              <li>Join Affiliate</li>
+                         </ul>
+                    </div>
+               </div>
+               <hr>
+               <div class="copyright">
+                    <p>Copyright &copy; <a href="#"> Online Shoping Mart</a></p>
+               </div>
+          </div>
+     </div>
+
+          <!-- --------- js for menuitems ----------- -->
+
+          <script>
+               var menuitems = document.getElementById("menuitems");
+               menuitems.style.maxHeight = "0px";
+               function menutoggle(){
+                    if(menuitems.style.maxHeight == "0px")
+                    {
+                         menuitems.style.maxHeight = "200px"
+                    }
+               else
+                    {
+                         menuitems.style.maxHeight = "0px"
+                    } 
+               }
+          </script>
+
+     <!-- ----------- js for singleproduct detail ------------  -->
+
+     <script>
+              var bigimgs = document.getElementById("bigimg");
+              var smallimgss = document.getElementsByClassName("smallimgs");
+
+                  // smallimgss[0].onclick = function()
+                  // {
+                  //          bigimgs.src = smallimgss[0].src;
+                  // }
+                  // smallimgss[1].onclick = function()
+                  // {
+                  //          bigimgs.src = smallimgss[1].src;
+                  // }
+                  // smallimgss[2].onclick = function()
+                  // {
+                  //          bigimgs.src = smallimgss[2].src;
+                  // }
+                  // smallimgss[3].onclick = function()
+                  // {
+                  //          bigimgs.src = smallimgss[3].src;
+                  // }
+                  for (let a = 0; a < 4; a++) 
+                  {
+                           smallimgss[a].onclick = function()
+                  {
+                           bigimgs.src = smallimgss[a].src;
+                  }
+                           
+                  }
+                  
+</script>
+</body>
+
+</html>

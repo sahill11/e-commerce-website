@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Online Shoping Mart</title>
+         <link rel="stylesheet" href="ecommerce.css">
+         <link rel="stylesheet" href="responsive.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
+                  rel="stylesheet">
+         <script src="https://kit.fontawesome.com/b7e8348489.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+         <div class="container">
+                  <div class="navbar">
+                           <div class="logo">
+                                    <h3>SHOPING MART</h3>
+                           </div>
+                           <nav class="right-nav">
+                                    <ul id="menuitems">
+                                             <li><a href="ecommerce.html">Home</a></li>
+                                             <li><a href="productlist.html">Products</a></li>
+                                             <li><a href="">Contact</a></li>
+                                             <li><a href="">About</a></li>
+                                    </ul>
+                           </nav>
+                           <img src="imgs/img-2.png" width="32px" height="32px">
+                           <img src="imgs/menu-icon.png" class="menu-icon" width="25px" height="25px"
+                                    onclick="menutoggle()">
+                  </div>
+         </div>
+
+         <!-- ------ cart items details ------ -->
+
+         <div class="small-container cart-page">
+                  <table>
+                           <tr>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Subtotal</th>
+                           </tr>
+                           <tr>
+                                    <td>
+                                             <div class="cart-info">
+                                                      <img src="imgs/2 (1).jpg">
+                                                      <div>
+                                                               <p>Vu Smart Led</p>
+                                                               <small>Price:$50.00</small>
+                                                               <br>
+                                                               <a href="">Remove</a>
+                                                      </div>
+                                             </div>
+                                    </td>
+                                    <td><input type="number" value="1"></td>
+                                    <td>$50.00</td>
+                           </tr>
+                           <tr>
+                                    <td>
+                                             <div class="cart-info">
+                                                      <img src="imgs/2 (3).jpg">
+                                                      <div>
+                                                               <p>TCL Smart Led</p>
+                                                               <small>Price:$80.00</small>
+                                                               <br>
+                                                               <a href="">Remove</a>
+                                                      </div>
+                                             </div>
+                                    </td>
+                                    <td><input type="number" value="1"></td>
+                                    <td>$80.00</td>
+                           </tr>
+                           <tr>
+                                    <td>
+                                             <div class="cart-info">
+                                                      <img src="imgs/2 (2).jpg">
+                                                      <div>
+                                                               <p>TOSHIBA Smart Led</p>
+                                                               <small>Price:$70.00</small>
+                                                               <br>
+                                                               <a href="">Remove</a>
+                                                      </div>
+                                             </div>
+                                    </td>
+                                    <td><input type="number" value="1"></td>
+                                    <td>$70.00</td>
+                           </tr>
+                  </table>
+
+                  <div class="total-price">
+                           <table>
+                                    <tr>
+                                             <td>Subtotal</td>
+                                             <td>$200.00</td>
+                                    </tr>
+                                    <tr>
+                                             <td>Tax</td>
+                                             <td>$30.00</td>
+                                    </tr>
+                                    <tr>
+                                             <td>Total</td>
+                                             <td>$230.00</td>
+                                    </tr>
+                           </table>
+                  </div>
+         </div>
+
+         <!-- ------- Footer ------- -->
+
+         <div class="footer">
+                  <div class="container">
+                           <div class="row">
+                                    <div class="footer-col-1">
+                                             <h3>Download Our App</h3>
+                                             <p>Download Our App on Android & Ios Device!</p>
+                                    </div>
+                                    <div class="footer-col-2">
+                                             <div class="logo">
+                                                      <h3>SHOPING MART &#xf07a;</h3>
+                                             </div>
+                                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, esse!
+                                             </p>
+                                    </div>
+                                    <div class="footer-col-3">
+                                             <h3>Follow Us</h3>
+                                             <ul>
+                                                      <li>Facebook</li>
+                                                      <li>Instagram</li>
+                                                      <li>Twitter</li>
+                                                      <li>Pintrest</li>
+                                             </ul>
+                                    </div>
+                                    <div class="footer-col-4">
+                                             <h3>Useful Links</h3>
+                                             <ul>
+                                                      <li>Cupons</li>
+                                                      <li>Blog Posts</li>
+                                                      <li>Return Policy</li>
+                                                      <li>Join Affiliate</li>
+                                             </ul>
+                                    </div>
+                           </div>
+                           <hr>
+                           <div class="copyright">
+                                    <p>Copyright &copy; <a href="#"> Online Shoping Mart</a></p>
+                           </div>
+                  </div>
+         </div>
+
+         <!-- --------- js for menuitems ----------- -->
+
+         <script>
+                  var menuitems = document.getElementById("menuitems");
+                  menuitems.style.maxHeight = "0px";
+                  function menutoggle() {
+                           if (menuitems.style.maxHeight == "0px") {
+                                    menuitems.style.maxHeight = "200px"
+                           }
+                           else {
+                                    menuitems.style.maxHeight = "0px"
+                           }
+                  }
+         </script>
+
+         <!-- ----------- js for singleproduct detail ------------  -->
+
+         <script>
+                  var bigimgs = document.getElementById("bigimg");
+                  var smallimgss = document.getElementsByClassName("smallimgs");
+
+                  // smallimgss[0].onclick = function()
+                  // {
+                  //          bigimgs.src = smallimgss[0].src;
+                  // }
+                  // smallimgss[1].onclick = function()
+                  // {
+                  //          bigimgs.src = smallimgss[1].src;
+                  // }
+                  // smallimgss[2].onclick = function()
+                  // {
+                  //          bigimgs.src = smallimgss[2].src;
+                  // }
+                  // smallimgss[3].onclick = function()
+                  // {
+                  //          bigimgs.src = smallimgss[3].src;
+                  // }
+                  for (let a = 0; a < 4; a++) {
+                           smallimgss[a].onclick = function () {
+                                    bigimgs.src = smallimgss[a].src;
+                           }
+
+                  }
+
+         </script>
+</body>
+
+</html>
